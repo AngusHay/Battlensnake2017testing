@@ -53,8 +53,17 @@ def move():
     you_x = you['coords'][0][0]
     you_y = you['coords'][0][1]
     
-    if you_y >= 14:
+    if you_y >= (board_height - 1):
         move = 'right'
+        
+    if you_y <= 0:
+        move = 'left'
+    
+    if you_x >= (board_width - 1):
+        move = 'up'
+        
+    if you_x <= 0:
+        move = 'down'
     
     #snakes = data['snakes']
     #you_index = snakes[data['you']]
