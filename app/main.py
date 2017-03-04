@@ -48,7 +48,8 @@ def move():
         if snake['id'] == you_id:
             you = snake
     
-    you_x = you['coords']
+    you_x = you['coords'][0][0]
+    you_y = you['coords'][0][1]
     
     move = 'down'
     
