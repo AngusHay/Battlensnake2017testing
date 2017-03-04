@@ -44,7 +44,7 @@ def move():
     snakes = data['snakes']
     you_index = snakes[data['you']]
     
-    snake = snakes[you_index]
+    #snake = snakes[you_index]
     
     
     move = 'down'
