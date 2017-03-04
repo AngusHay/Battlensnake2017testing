@@ -42,6 +42,8 @@ def move():
     board_height = data['height']
     board_width = data['width']
     
+    board = [1 for i in range(board_width)]
+    
     you_id = data[u'you']
     
     snakes = data['snakes']
