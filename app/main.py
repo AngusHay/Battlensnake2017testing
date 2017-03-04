@@ -48,10 +48,10 @@ def move():
             'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
         }
 
-    return {
-        'move': random.choice(directions),
-        'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
-    }
+    #return {
+    #    'move': random.choice(directions),
+    #    'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
+    #}
 
 
 # Expose WSGI app (so gunicorn can find it)
