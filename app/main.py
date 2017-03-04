@@ -41,8 +41,6 @@ def move():
     board_height = data['height']
     board_width = data['width']
     
-    snake = data[snakes[you]]
-    
     
     move = 'down'
     
