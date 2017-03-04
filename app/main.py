@@ -39,8 +39,8 @@ def move():
     avail_directions = [1, 1, 1, 1]
     
     move = 'down'
-    if board_height > 12:
-        move = 'right'
+    #if board_height > 12:
+    #    move = 'right'
     
     return {
         #'move': random.choice(directions),
