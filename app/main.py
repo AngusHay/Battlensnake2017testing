@@ -45,7 +45,7 @@ def move():
     
     return {
         #'move': random.choice(directions),
-        'move': move,
+        'move': 'down',
         'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
     }
 
