@@ -38,10 +38,15 @@ def move():
     directions = ['up', 'down', 'left', 'right']
     avail_directions = [1, 1, 1, 1]
     
-    move = 'down'
-    if data['height'] > 12:
-        move = 'right'
+    board_height = data['height']
+    board_width = data['width']
     
+    snake = data[snakes[you]]
+    
+    
+    move = 'down'
+    
+        
     return {
         #'move': random.choice(directions),
         'move': move,
