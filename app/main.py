@@ -38,9 +38,11 @@ def move():
     directions = ['up', 'down', 'left', 'right']
     avail_directions = [1, 1, 1, 1];
     
+    move = 'down';
+    
     return {
         #'move': random.choice(directions),
-        'move': 'down',
+        'move': move,
         'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
     }
 
