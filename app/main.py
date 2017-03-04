@@ -43,7 +43,6 @@ def move():
     me = data[u'you']
     
     me_x = me['coords'][0][0]
-    me_y = me['coords'][0][1]
     
     move = 'down'
     
