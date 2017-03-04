@@ -64,6 +64,15 @@ def move():
     
     if you_x >= (board_width - 1):
         avail_directions[3] = 0
+        
+    if avail_directions[0]:
+        move = 'up'
+    elif avail_directions[1]
+        move = 'down'
+    elif avail_directions[2]
+        move = 'left'
+    elif avail_directions[3]
+        move = 'right'
     
     #snakes = data['snakes']
     #you_index = snakes[data['you']]
