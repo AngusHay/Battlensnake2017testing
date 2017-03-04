@@ -42,7 +42,7 @@ def move():
     board_width = data['width']
     
     snakes = data['snakes']
-    you_index = snakes[data['you']]
+    #you_index = snakes[data['you']]
     
     #snake = snakes[you_index]
     
