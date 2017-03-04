@@ -56,13 +56,13 @@ def move():
     if you_y >= (board_height - 1):
         move = 'right'
         
-    if you_y <= 0:
+    if you_y <= 1:
         move = 'left'
     
     if you_x >= (board_width - 1):
         move = 'up'
         
-    if you_x <= 0:
+    if you_x <= 1:
         move = 'down'
     
     #snakes = data['snakes']
