@@ -36,10 +36,10 @@ def move():
 
     # TODO: Do things with data
     directions = ['up', 'down', 'left', 'right']
-
+    
     return {
         'move': random.choice(directions),
-        'taunt': 'battlesnake-python!'
+        'taunt': 'Your father was a hamppsther and your mother smelled of elderberries!'
     }
 
 
