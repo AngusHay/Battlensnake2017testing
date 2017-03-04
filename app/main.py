@@ -38,6 +38,17 @@ def move():
     directions = ['up', 'down', 'left', 'right']
     avail_directions = [1, 1, 1, 1];
     
+    # check up
+    if data.snakes[you].coords[0] == 0:
+        avail_directions[0] = 0;
+    
+    if avail_directions[0] == 1:
+        
+        return {
+            'move': 'up',
+            'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
+        }
+
     return {
         'move': random.choice(directions),
         'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
