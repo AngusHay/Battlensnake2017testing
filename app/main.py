@@ -39,13 +39,12 @@ def move():
     avail_directions = [1, 1, 1, 1];
     
     # check up
-    if data.snakes[you].coords[0] == 0:
+    if data.snakes[you].coords[0] <= 2:
         avail_directions[0] = 0;
     
     if avail_directions[0] == 1:
-        
         return {
-            'move': 'up',
+            'move': 'right',
             'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
         }
 
