@@ -38,11 +38,6 @@ def move():
     directions = ['up', 'down', 'left', 'right']
     avail_directions = [1, 1, 1, 1];
     
-    move = 'left';
-    
-    if board_width == 15:
-        move = 'right';
-    
     return {
         #'move': random.choice(directions),
         'move': 'down',
