@@ -42,6 +42,8 @@ def move():
     
     me = data[u'you']
     
+    me_x = me['coords']
+    
     move = 'down'
     
     #snakes = data['snakes']
