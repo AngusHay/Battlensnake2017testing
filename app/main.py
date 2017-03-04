@@ -36,10 +36,17 @@ def move():
 
     # TODO: Do things with data
     directions = ['up', 'down', 'left', 'right']
+    avail_directions = [1, 1, 1, 1];
+        
+    # check up direction
+    if (board_width == 15):
+        return { 'move': directions[0];
+            
+        }
     
     return {
         'move': random.choice(directions),
-        'taunt': 'Your father was a hamppsther and your mother smelled of elderberries!'
+        'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
     }
 
 
