@@ -67,11 +67,11 @@ def move():
         
     if avail_directions[0]:
         move = 'up'
-    elif avail_directions[1]
+    elif avail_directions[1]:
         move = 'down'
-    elif avail_directions[2]
+    elif avail_directions[2]:
         move = 'left'
-    elif avail_directions[3]
+    elif avail_directions[3]:
         move = 'right'
     
     #snakes = data['snakes']
