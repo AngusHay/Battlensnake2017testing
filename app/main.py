@@ -40,9 +40,15 @@ def move():
     board_height = data['height']
     board_width = data['width']
     
-    me = data[u'you']
+    you_id = data[u'you']
     
-    me_x = me['coords']
+    snakes = data['snakes']
+    you = 0;
+    for snake in snakes:
+        if snake['id'] == you_id:
+            you = snake
+    
+    you_x = you['coords']
     
     move = 'down'
     
