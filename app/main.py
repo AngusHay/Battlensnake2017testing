@@ -38,7 +38,7 @@ def move():
     directions = ['up', 'down', 'left', 'right']
     avail_directions = [1, 1, 1, 1]
     
-    move = 'down';
+    move = 'down'
     if board_height > 12:
         move = 'right'
     
