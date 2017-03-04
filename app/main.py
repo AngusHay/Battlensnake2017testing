@@ -39,9 +39,13 @@ def move():
     avail_directions = [1, 1, 1, 1];
         
     # check up direction
-    if (board_width == 15):
-        return { 'move': directions[0];
-            
+    if board_width == 15:
+        return {
+            'move': directions[0];
+        }
+    else:
+        return {
+            'move': directions[2];
         }
     
     return {
