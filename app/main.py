@@ -42,7 +42,7 @@ def move():
     board_height = data['height']
     board_width = data['width']
     
-    board = [1 for i in range(board_width)][1 for i in range(board_width)]
+    board = [[1 for i in range(board_width)] for i in range(board_width)]
     
     you_id = data[u'you']
     
