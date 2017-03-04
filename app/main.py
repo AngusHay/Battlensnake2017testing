@@ -43,8 +43,7 @@ def move():
     
     move = 'down'
     
-    for snake in data['snakes']:
-        move = 'right'
+    you = data['snakes'][data['you']]
     
     #snakes = data['snakes']
     #you_index = snakes[data['you']]
