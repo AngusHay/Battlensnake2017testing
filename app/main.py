@@ -50,8 +50,7 @@ def move():
     you = 0;
     for snake in snakes:
 		for location in snake['coords']:
-			board[location[0]] = 0
-			board[location[1]] = 0
+			board[location[0]][location[1]] = 0
 			
 		if snake['id'] == you_id:
 			you = snake
@@ -71,8 +70,18 @@ def move():
     
     if you_x >= (board_width - 1):
         avail_directions[3] = 0
-		
-	#target_location = 
+	
+	# check up
+	target_x = you_x
+	target_y = you_y - 1
+	if board[targetx][target_y] == 0
+		avail_directions[0] = 0;
+	
+	# check down
+	target_x = you_x
+	target_y = you_y + 1
+	if board[targetx][target_y] == 0
+		avail_directions[0] = 0;
         
     if avail_directions[0]:
         move = 'up'
