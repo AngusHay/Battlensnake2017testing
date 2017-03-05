@@ -26,7 +26,7 @@ def start():
 		'color': '#00FF00',
 		'taunt': '{} ({}x{})'.format(game_id, board_width, board_height),
 		'head_url': head_url,
-		'name': 'battlesnake-python'
+		'name': 'The God-King'
 	}
 
 
@@ -142,7 +142,7 @@ def move():
 	return {
 		# 'move': random.choice(directions),
 		'move': move,
-		'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
+		'taunt': 'Bow down!'
 	}
 
 
