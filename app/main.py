@@ -38,7 +38,6 @@ def move():
     avail_directions = [1, 1, 1, 1]
     
     move = 'down'
-	taunt = 'Bow down!'
     
     board_height = data['height']
     board_width = data['width']
@@ -80,8 +79,6 @@ def move():
         move = 'left'
     elif avail_directions[3]:
         move = 'right'
-	else
-		taunt = 'Oh no!'
     
     
     
