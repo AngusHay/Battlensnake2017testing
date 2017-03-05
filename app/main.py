@@ -71,6 +71,8 @@ def move():
 	if you_x >= (board_width - 1):
 		avail_directions[3] = 0
 	
+	print "location: %d %d" % (you_x, you_y)
+	
 	# check up
 	target_x = you_x
 	target_y = you_y - 1
