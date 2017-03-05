@@ -86,8 +86,8 @@ def move():
 	target_x = you_x
 	target_y = you_y + 1
 	if target_y > (board_height - 1):
-		avail_directions[0] = 0
-	if board[target_x][target_y] == 0:
+		avail_directions[1] = 0
+	elif board[target_x][target_y] == 0:
 		avail_directions[1] = 0
 		print "debug info down"
 	
