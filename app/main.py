@@ -42,7 +42,7 @@ def move():
     board_height = data['height']
     board_width = data['width']
     
-    board = [[1 for i in range(board_width)] for i in range(board_width)]
+    board = [[1 for i in range(board_width)] for i in range(board_height)]
     
     you_id = data[u'you']
     
@@ -51,6 +51,7 @@ def move():
     for snake in snakes:
 		for location in snake['coords']:
 			board[location[0]][location[1]] = 0
+			print "bleh"
 			
 		if snake['id'] == you_id:
 			you = snake
