@@ -133,7 +133,7 @@ def move():
 			randomval = randomval + location[0] + location[1]
 	
 	randomval = randomval % len(possible_moves)
-	print "randomval: %d" % randomval
+	print "randomval: %d" % len(possible_moves)
 	
 	move = possible_moves[randomval]
 	
