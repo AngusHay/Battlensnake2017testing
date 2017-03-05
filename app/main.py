@@ -61,16 +61,16 @@ def move():
         
 	# check for edge of board
     if you_y <= 0:
-        avail_directions[0] = 0
+		avail_directions[0] = 0
     
     if you_y >= (board_height - 1):
-        avail_directions[1] = 0
+		avail_directions[1] = 0
         
     if you_x <= 0:
-        avail_directions[2] = 0
+		avail_directions[2] = 0
     
     if you_x >= (board_width - 1):
-        avail_directions[3] = 0
+		avail_directions[3] = 0
 	
 	# check up
 	target_x = you_x
