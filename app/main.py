@@ -132,8 +132,8 @@ def move():
 		for location in snake['coords']:
 			randomval = randomval + location[0] + location[1]
 	
-	print "randomval: %d" % randomval
 	randomval = randomval % len(possible_moves)
+	print "randomval: %d" % randomval
 	
 	move = possible_moves[randomval]
 	
