@@ -38,6 +38,7 @@ def move():
     avail_directions = [1, 1, 1, 1]
     
     move = 'down'
+	taunt = 'Bow down!'
     
     board_height = data['height']
     board_width = data['width']
@@ -49,6 +50,8 @@ def move():
     snakes = data['snakes']
     you = 0;
     for snake in snakes:
+		for location in 
+	
         if snake['id'] == you_id:
             you = snake
     
@@ -75,6 +78,8 @@ def move():
         move = 'left'
     elif avail_directions[3]:
         move = 'right'
+	else
+		taunt = 'Oh no!'
     
     
     
