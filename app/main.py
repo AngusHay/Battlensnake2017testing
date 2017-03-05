@@ -74,9 +74,10 @@ def move():
 	# check up
 	target_x = you_x
 	target_y = you_y - 1
-	print "%d" % board[target_x][target_y]
-	if board[target_x][target_y] == 0:
-		avail_directions[0] = 0;
+	if target_y < 0:
+		avail_directions[0] = 0
+	elif board[target_x][target_y] == 0:
+		avail_directions[0] = 0
 		print "debug info up"
 	
 	# check down
