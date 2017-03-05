@@ -76,14 +76,14 @@ def move():
 	target_x = you_x
 	target_y = you_y - 1
 	print "%d" % board[target_x][target_y]
-	if board[targetx][target_y] == 0:
+	if board[target_x][target_y] == 0:
 		avail_directions[0] = 0;
 		print "debug info up"
 	
 	# check down
 	target_x = you_x
 	target_y = you_y + 1
-	if board[targetx][target_y] == 0:
+	if board[target_x][target_y] == 0:
 		avail_directions[1] = 0
 		print "debug info down"
 		
