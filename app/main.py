@@ -81,7 +81,7 @@ def move():
 	target_x = you_x
 	target_y = you_y + 1
 	if board[targetx][target_y] == 0:
-		avail_directions[0] = 0
+		avail_directions[1] = 0
         
     if avail_directions[0]:
         move = 'up'
