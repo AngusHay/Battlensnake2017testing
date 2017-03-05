@@ -116,13 +116,13 @@ def move():
 	if avail_directions[0]:
 		possible_moves.append('up')
 		#move = 'up'
-	elif avail_directions[2]:
+	if avail_directions[2]:
 		possible_moves.append('left')
 		#move = 'left'
-	elif avail_directions[1]:
+	if avail_directions[1]:
 		possible_moves.append('down')
 		#move = 'down'
-	elif avail_directions[3]:
+	if avail_directions[3]:
 		possible_moves.append('right')
 		#move = 'right'
 	
