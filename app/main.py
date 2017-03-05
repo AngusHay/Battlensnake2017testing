@@ -93,20 +93,27 @@ def move():
 	
 	print "directions available: %d %d %d %d" % (avail_directions[0], avail_directions[1], avail_directions[2], avail_directions[3])
 	
-	if avail_directions[0]:
-		move = 'up'
-	elif avail_directions[2]:
-		move = 'left'
-	elif avail_directions[1]:
-		move = 'down'
-	elif avail_directions[3]:
-		move = 'right'
+	possible_moves = []
 	
+	if avail_directions[0]:
+		possible_moves.append('up');
+		#move = 'up'
+	elif avail_directions[2]:
+		possible_moves.append('left');
+		#move = 'left'
+	elif avail_directions[1]:
+		possible_moves.append('down');
+		#move = 'down'
+	elif avail_directions[3]:
+		possible_moves.append('right');
+		#move = 'right'
+	
+	move = random.choice(possible_moves);
 	
 	
 	
 	return {
-		'move': random.choice(directions),
+		# 'move': random.choice(directions),
 		'move': move,
 		'taunt': 'Your father was a hampster and your mother smelled of elderberries!'
 	}
