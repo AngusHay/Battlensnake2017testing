@@ -49,9 +49,9 @@ def move():
     snakes = data['snakes']
     you = 0;
     for snake in snakes:
-		#for location in snake['coords']:
-		#	board[location[0]] = 0,
-		#	board[location[1]] = 0
+		for location in snake['coords']:
+			board[location[0]] = 0,
+			board[location[1]] = 0
 	
         if snake['id'] == you_id:
             you = snake
