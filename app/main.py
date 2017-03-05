@@ -128,8 +128,9 @@ def move():
 	
 	# generate "random" number
 	randomval = 0;
-	for location in snake['coords']:
-		randomval = randomval + location[0] + location[1]
+	for snake in snakes:
+		for location in snake['coords']:
+			randomval = randomval + location[0] + location[1]
 	
 	print "randomval: %d" % randomval
 	randomval = randomval % len(possible_moves)
