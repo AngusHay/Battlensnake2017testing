@@ -90,6 +90,24 @@ def move():
 	elif board[target_x][target_y] == 0:
 		avail_directions[1] = 0
 		print "debug info down"
+		
+	# check left
+	target_x = you_x - 1
+	target_y = you_y
+	if target_x < 0:
+		avail_directions[2] = 0
+	elif board[target_x][target_y] == 0:
+		avail_directions[2] = 0
+		print "debug info left"
+	
+	# check down
+	target_x = you_x + 1
+	target_y = you_y
+	if target_x > (board_width - 1):
+		avail_directions[3] = 0
+	elif board[target_x][target_y] == 0:
+		avail_directions[3] = 0
+		print "debug info right"
 	
 	print "directions available: %d %d %d %d" % (avail_directions[0], avail_directions[1], avail_directions[2], avail_directions[3])
 	
