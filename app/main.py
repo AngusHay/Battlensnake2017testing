@@ -54,11 +54,12 @@ def move():
 			board[location[1]] = 0
 			
 		if snake['id'] == you_id:
-            you = snake
+			you = snake
     
     you_x = you['coords'][0][0]
     you_y = you['coords'][0][1]
         
+	# check for edge of board
     if you_y <= 0:
         avail_directions[0] = 0
     
@@ -70,6 +71,8 @@ def move():
     
     if you_x >= (board_width - 1):
         avail_directions[3] = 0
+		
+	#target_location = 
         
     if avail_directions[0]:
         move = 'up'
