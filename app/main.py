@@ -59,11 +59,11 @@ def move():
 	you_y = you['coords'][0][1]
 		
 	# check for edge of board
-	if you_y <= 0:
-		avail_directions[0] = 0
+	#if you_y <= 0:
+	#	avail_directions[0] = 0
 	
-	if you_y >= (board_height - 1):
-		avail_directions[1] = 0
+	#if you_y >= (board_height - 1):
+	#	avail_directions[1] = 0
 		
 	if you_x <= 0:
 		avail_directions[2] = 0
@@ -85,6 +85,8 @@ def move():
 	# check down
 	target_x = you_x
 	target_y = you_y + 1
+	if target_y > (board_height - 1):
+		avail_directions[0] = 0
 	if board[target_x][target_y] == 0:
 		avail_directions[1] = 0
 		print "debug info down"
